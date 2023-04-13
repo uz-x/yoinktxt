@@ -4,18 +4,20 @@ Instead of using .env files, it uses txt files.
 
 ## Functions
 
-| **Function**            | **Description**                                                        | **Usage**                                | **Notes**                    |
-|-------------------------|------------------------------------------------------------------------|------------------------------------------|------------------------------|
-| (class) Yoinktxt        |                                                                        | yk = yktxt.Yoinktxt()                    | Use before anything          |
-| data_file(filename)     | Sets the txt file that you want to use                                 | data_file("mydata.txt")                  |                              |
-| data_line(lineSplitter) | Sets the character(s) that you want to use to signify the next value   | data_line("\n")                          | Use before "data_spl"!       |
-| data_spl(splitter)      | Sets the character(s) that you want to use to split the name and value | data_spl("==")                           |                              |
-| yoink_text()            | Returns the exact text in the txt file                                 | yoink_text()                             |                              |
-| yoink_list()            | Returns every name and value as 1 object in a list                     | yoink_list()                             |                              |
-| yoink_dict()            | Returns dictionary of names and values                                 | yoink_dict()                             |                              |
-| yoink(name)             | Gives you the value specified by the name                              | yoink("USERNAME")                        |                              |
-| edit_value(name, value) | Edits the value specified by the name                                  | edit_value("USERNAME", "NewUsername123") | Also works to add new values |
-| delete_value(name)      | Deletes the value specified by the name                                | delete_value("USERNAME")                 |                              |
+| **Function**                                 | **Description**                                                        | **Usage**                                                        | **Notes**              |
+|----------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------|------------------------|
+| (class) Yoinktxt                             |                                                                        | yk = yktxt.Yoinktxt()                                            | Use before anything    |
+| data_file(filename)                          | Sets the txt file that you want to use                                 | data_file("mydata.txt")                                          |                        |
+| data_line(lineSplitter)                      | Sets the character(s) that you want to use to signify the next value   | data_line("\n")                                                  | Use before "data_spl"! |
+| data_spl(splitter)                           | Sets the character(s) that you want to use to split the name and value | data_spl("==")                                                   |                        |
+| yoink_text()                                 | Returns the exact text in the txt file                                 | yoink_text()                                                     |                        |
+| yoink_list()                                 | Returns every name and value as 1 object in a list                     | yoink_list()                                                     |                        |
+| yoink_dict()                                 | Returns dictionary of names and values                                 | yoink_dict()                                                     |                        |
+| yoink(name)                                  | Gives you the value specified by the name                              | yoink("USERNAME")                                                |                        |
+| edit_value(name, value)                      | Edits the value specified by the name                                  | edit_value("USERNAME", "NewUsername123")                         |                        |
+| add_value(name, value)                       | Adds the value specified by the name                                   | add_value("EMAIL", "example@company.com")                        |                        |
+| add_value_perm(filename, lineSplitter, text) | Same as `add_value()` but adds to the txt file, not the dictionary     | add_value_perm("mydata.txt", "\n", "EMAIL==example@company.com") |                        |
+| delete_value(name)                           | Deletes the value specified by the name                                | delete_value("USERNAME")                                         |                        |
 
 ## Simple setup file
 mydata.txt:
