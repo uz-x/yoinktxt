@@ -39,7 +39,7 @@ yk.data_line(myLine)
 yk.data_spl(mySpl)
 ```
 
-After this code, the current data stores in the dictionary *(that you can see with yoink_dict())* is:
+After this code, the current data stored in the dictionary *(that you can see with yoink_dict())* is:
 ```
 {"_USERNAME": "myuser150", "_PASSWORD": "mypass888"}
 ```
