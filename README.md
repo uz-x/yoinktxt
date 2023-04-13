@@ -42,7 +42,7 @@ yk.data_spl(mySpl)
 ```
 
 After this code, the current data stored in the dictionary *(that you can see with yoink_dict())* is:
-```
+```py
 {"_USERNAME": "myuser150", "_PASSWORD": "mypass888"}
 ```
 
